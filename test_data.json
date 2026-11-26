@@ -1,0 +1,26 @@
+{
+  "project_name": "E-Commerce Website Automation Testing - Blinkit",
+  "website_url": "https://blinkit.com/",
+  "expected_title_keyword": "Blinkit",
+  "delivery_location": "Indiranagar, Bengaluru",
+  "user_credentials": {
+    "username": "test_shopper",
+    "mobile_no": "9876543210",
+    "email": "test_shopper@example.com"
+  },
+  "products": [
+    "milk",
+    "bread",
+    "butter",
+    "chips",
+    "chocolate"
+  ],
+  "timeouts": {
+    "explicit_wait_seconds": 15,
+    "step_pause_seconds": 1.5
+  },
+  "report_files": {
+    "csv": "test_results_report.csv",
+    "html": "test_results_report.html"
+  }
+}

@@ -1,0 +1,13 @@
+Test_Case_ID,Scenario,Input_Data,Expected_Result,Actual_Result,Status,Timestamp
+TC_01,Create Chrome WebDriver session,Browser=Chrome (Maximized),Browser launches with an active WebDriver session,Session started (ID: 40660b953ecb...),PASS,2026-11-26 09:53:47
+TC_02,Navigate to Blinkit website,URL=https://blinkit.com/,Page loads with 'Blinkit' in title,"Loaded title: '30,000+ products delivered to your doorstep | Blinkit'",PASS,2026-11-26 09:53:53
+TC_03,Select delivery location,"Location=Indiranagar, Bengaluru","Location suggestion appears, is selected, and modal closes","Selected location: 'Indiranagar, Bengaluru, Karnataka, India'",PASS,2026-11-26 09:53:55
+TC_04,Validate Login modal mobile number input,Mobile=9876543210,10-digit mobile number accepted and Continue button enabled,Entered '9876543210'; Continue enabled=True,PASS,2026-11-26 09:53:57
+TC_05,Navigate to product search bar,Click Search Bar,Search page (/s/) opens with active search input,Opened 'https://blinkit.com/s/',PASS,2026-11-26 09:54:01
+TC_06,Search 'milk' and add item to cart,Search='milk',Product found and added; cart count becomes 1,Added 'Milky Mist Pro+ 25 g High Protein Milk - Pack of 3' | Cart badge: 'r | 1 item | ₹234',PASS,2026-11-26 09:54:05
+TC_07,Search 'bread' and add item to cart,Search='bread',Product found and added; cart count becomes 2,Added 'Modern 100% Whole Wheat Bread (Zero Maida)' | Cart badge: 'r | 2 items | ₹299',PASS,2026-11-26 09:54:08
+TC_08,Search 'butter' and add item to cart,Search='butter',Product found and added; cart count becomes 3,Added 'Akshayakalpa Organic Cooking Organic Butter' | Cart badge: 'r | 3 items | ₹527',PASS,2026-11-26 09:54:12
+TC_09,Search 'chips' and add item to cart,Search='chips',Product found and added; cart count becomes 4,Added 'Bingo Masala Massacre Potato Chips' | Cart badge: 'r | 4 items | ₹562',PASS,2026-11-26 09:54:16
+TC_10,Search 'chocolate' and add item to cart,Search='chocolate',Product found and added; cart count becomes 5,Added 'Celebrations Assorted Chocolate Gift Pack' | Cart badge: 'r | 5 items | ₹962',PASS,2026-11-26 09:54:20
+TC_11,Open shopping cart and verify all 5 added items,Expected items=5,"Cart drawer displays My Cart, Bill details, and all 5 added items","Verified 5/5 items in cart (₹964): Milky Mist Pro+ 25 g High Protein Milk - Pack of 3, Modern 100% Whole Wheat Bread (Zero Maida), Akshayakalpa Organic Cooking Organic Butter, Bingo Masala Massacre Potato Chips, Celebrations Assorted Chocolate Gift Pack",PASS,2026-11-26 09:54:33
+TC_12,Close browser and end WebDriver session,driver.quit(),Browser closes and session terminates cleanly,WebDriver session closed successfully,PASS,2026-11-26 09:54:36
